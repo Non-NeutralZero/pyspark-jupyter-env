@@ -1,0 +1,26 @@
+version: '3'
+
+
+services:
+  pysparkjupyter:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    deploy:
+      resources:
+        limits:
+          memory: 10M
+    image: pysparkjupyter_img
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+    ports:
+      - "8890:8890"
+      - "5022:22"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    container_name: pysparkjupyter_container
+    networks:
+      pysparkjupyterenv_network:
+
+networks:
+      pysparkjupyterenv_network:
