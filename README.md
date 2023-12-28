@@ -9,7 +9,7 @@ https://docs.docker.com/compose/gettingstarted/
 - add start_pysparkjupyter.sh to your ~/scripts (or your $PATH added scripts directory) so you don't have to cd to the project's directory to start the environment (see: https://askubuntu.com/questions/153251/launch-shell-scripts-from-anywhere)
 - OR, you can cd to the project's directory and run the script from there
 
-### add-ons
+### Add-ons
 - You can configure Kerberos in krb5.conf in case you're working with a kerberized cluster
 
 # Docker commands
